@@ -3,16 +3,16 @@ class Employee {
     this.firstname = firstname;
     this.lastname = lastname;
     // Complete the code!
-    // this.email = email;
-    this.email = `${this.firstname.toLowerCase()}.${this.lastname.toLowerCase()}@company.com`;
-    this.fullname = `${this.firstname} ${this.lastname}`;
+    this.fullname = `${firstname} ${lastname}`;
+    this.email = `${firstname.toLowerCase()}.${lastname.toLowerCase()}@company.com`;
   }
 }
-const newName = new Employee("Lala", "Christl");
+const emp1 = new Employee("Dan", "Reiller");
 
 console.log("---------1. Full Name-----------");
 // 1. Full name
-console.log(newName.fullname);
+console.log(emp1.fullname);
+
 console.log("---------2. Email-----------");
 // 2. Email
-console.log(newName.email);
+console.log(emp1.email);
